@@ -15,7 +15,7 @@ public class ExemploSimplesUmaPagina {
 
     @Test
     @DisplayName("Quando abrir página principal do Tester Global, Então encontrar o título da página presente.")
-    public void verificaPaginaPrincipal (){
+    public void verificaPaginaPrincipal () {
         /**
          *  Assumimos que o chromedriver esteja na sua pasta de sistema corretamente.
          *  ex:
@@ -32,18 +32,17 @@ public class ExemploSimplesUmaPagina {
 
         driver.get(baseUrl);
         tituloEncontrado = driver.findElement(By.cssSelector(".et_pb_text_inner")).getText();
+
         System.out.println(tituloEncontrado);
 
         /**
          * Observe que estamos usando o contains para verificar se o título está presente na página.
-         * Fazemos para o código ficar mais robusto.
+         * Fazemos isso para o código ficar mais robusto.
          * Observe ainda que o matcher vem do Hamcrest. Usamos bibliotecas específicas para nos ajudar
-         * a ter matchers mais robustos
+         * a ter matchers mais robustos.
          */
         assertThat(tituloEncontrado, containsString(tituloEsperado));
 
         driver.close();
-
-        System.exit(0);
     }
 }
