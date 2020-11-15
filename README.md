@@ -15,7 +15,7 @@ Esse projeto possui 3 branches com diferentes níveis de complexidade e exemplif
 
 ## Framework de teste automatizado
 
-O chomedrive disponível nesse projeto é a versão ChromeDriver 86.0.4240.22 para MACOSx.
+O ChromeDriver disponível nesse projeto é a versão 86.0.4240.22 para MACOSx.
 
 Isso significa que ele só funcionará em browsers chrome dessa série. 
 
@@ -60,7 +60,7 @@ Navegue até a pasta em que voceê baixou ou clonou os arquivos e use os comando
 
 Os resultados dos testes são exibidos na tela do Intellij ou terminal.
  
-Além disso, geramos um relatório .html a cada execuçaão. 
+Além disso, geramos um relatório .html a cada execução. 
 
 Esse relatório está na pasta 
 
