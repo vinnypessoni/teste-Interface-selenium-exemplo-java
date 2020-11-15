@@ -4,7 +4,7 @@ Essa framework de teste automatizado utiliza Selenium Webdriver, Junit 5 e Gradl
 
 Também exemplifica o uso do design pattern Page Objects. 
 
-## Significado de cada Branc
+## Estrutura das Branches
 
 Esse projeto possui 3 branches com diferentes níveis de complexidade e exemplificando diferentes usos das ferramentas para testes de interface. 
 
