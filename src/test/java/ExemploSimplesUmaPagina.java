@@ -1,9 +1,9 @@
-
-import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 
 public class ExemploSimplesUmaPagina {
@@ -31,7 +31,7 @@ public class ExemploSimplesUmaPagina {
          * Observe ainda que o matcher vem do Hamcrest. Usamos bibliotecas específicas para nos ajudar
          * a ter matchers mais robustos.
          */
-       MatcherAssert.assertThat(tituloEncontrado, Matchers.containsString(tituloEsperado));
+        assertThat(tituloEncontrado, Matchers.containsString(tituloEsperado));
 
         // Observe que se estamos usando só o Java pra rodar o selenium, precisamos usar o quit ao inves do .close aqui
         driver.quit();
