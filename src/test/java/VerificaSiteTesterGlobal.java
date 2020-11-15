@@ -1,4 +1,4 @@
-import PageObjects.TesterGlobalPage;
+import page_objects.TesterGlobalPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,13 +12,15 @@ import static org.hamcrest.Matchers.containsString;
 public class VerificaSiteTesterGlobal {
 
     private final String baseUrl = "http://www.viniciuspessoni.com";
-    private final String driverPath = "usr/local/bin";
+    private final String driverPath = "src/test/resources/chromedriver 5";
+
+
     private TesterGlobalPage tgp;
     private WebDriver driver;
 
     @BeforeAll
     public void setup(){
-        //System.setProperty("webdriver.gecko.driver", driverPath);
+        System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
@@ -43,6 +45,11 @@ public class VerificaSiteTesterGlobal {
         assertThat(tituloEncontrado, containsString(tituloEsperado));
     }
 
+    @Test
+    @DisplayName("Quando realizar a busca por norma no campo busca, então devo ver o artigo sobre normas de teste.")
+    public void verificaCampoBusca () {
+
+    }
 
 
 }
