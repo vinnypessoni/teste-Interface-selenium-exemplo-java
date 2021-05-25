@@ -18,12 +18,33 @@ test {
     }
 }
 
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
 dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
 
     testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    testImplementation 'io.cucumber:cucumber-java:6.10.4'
+    testImplementation 'io.cucumber:cucumber-junit:6.10.4'
 }
+
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'step_defs', 'src/test/resources']
+        }
+    }
+}
+

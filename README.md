@@ -11,11 +11,17 @@ Esse projeto possui 3 branches com diferentes níveis de complexidade e exemplif
 1. master: possui o projeto mais simples possível, para quem é iniciante com selenium, java e junit 5. 
 2. selenium-puro: exemplifica o uso de selenium e java puro (sem Junit 5). 
 3. selenium-junit5-pageobjects: demonstra o uso de selenium e Junit 5 aplicando o padrão Page Objects. 
+4. cucumber-selenium-junit-gradle: demonstra o uso dos testes de interface com Cucumber, Gradle, Junit e Selenium
 
+Para executar os testes com cucumber a partir do gradle, execute no terminal:
+
+        ./gradlew clean cucumber
+
+Os resultados serão impressos no terminal.
 
 ## Framework de teste automatizado
 
-O ChromeDriver disponível nesse projeto é a versão 86.0.4240.22 para MACOSx.
+O ChromeDriver disponível nesse projeto é a versão 90.0.4430.212 (Official Build) (x86_64) para MACOSx.
 
 Isso significa que ele só funcionará em browsers chrome dessa série. 
 
