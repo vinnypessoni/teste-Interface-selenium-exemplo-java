@@ -17,7 +17,7 @@ Para executar os testes com cucumber a partir do gradle, execute no terminal:
 
         ./gradlew clean cucumber
 
-Os resultados serão impressos no terminal.
+Os resultados serão impressos no terminal. Alem disso, um report do cucumber é gerado na pasta build/cucumber-report.html
 
 ## Framework de teste automatizado
 
