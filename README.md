@@ -1,6 +1,6 @@
 # Projeto Didático Simples com Selenium Webdriver
 
-Essa framework de teste automatizado utiliza Selenium Webdriver, Junit 5 e Gradle para realizar os testes. 
+Essa framework de teste automatizado utiliza Selenium Webdriver, Junit 5, Cucumber e Gradle para realizar os testes. 
 
 Também exemplifica o uso do design pattern Page Objects. 
 
@@ -11,7 +11,7 @@ Esse projeto possui 4 branches com diferentes níveis de complexidade e exemplif
 1. **master**: possui o projeto mais simples possível, para quem é iniciante com selenium, java e junit 5. 
 2. **selenium-puro**: exemplifica o uso de selenium e java puro (sem Junit 5). 
 3. **selenium-junit5-pageobjects**: demonstra o uso de selenium e Junit 5 aplicando o padrão Page Objects. 
-4. **cucumber-selenium-junit-gradle**: demonstra o uso dos testes de interface com Cucumber, Gradle, Junit e Selenium
+4. **cucumber-selenium-junit-gradle**: demonstra o uso dos testes de interface com Cucumber, Junit 5, Selenium, Gradle e PageObjects
 
 
 ## Framework de teste automatizado
@@ -47,15 +47,17 @@ Os testes serão executados e os resultados serão exibidos na tela de execuçã
 
 Uma outra possibilidade é executá-los por meio do terminal.
 
-Navegue até a pasta em que voceê baixou ou clonou os arquivos e use os comandos:
+Navegue até a pasta em que voceê baixou ou clonou os arquivos e use os comandos (o primeiro para as branches sem cucumber, o segundo para branches com cucumber):
  
     Linux/Mac
     
-        ./gradlew clean test  
+        ./gradlew clean test 
+        ./gradlew clean cucumber 
     
     Windows
     
         gradlew clean test 
+        gradlew clean cucumber  
 
 #### Relatórios
 
