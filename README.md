@@ -6,7 +6,7 @@ Também exemplifica o uso do design pattern Page Objects.
 
 ## Estrutura das Branches
 
-Esse projeto possui 3 branches com diferentes níveis de complexidade e exemplificando diferentes usos das ferramentas para testes de interface. 
+Esse projeto possui 4 branches com diferentes níveis de complexidade e exemplificando diferentes usos das ferramentas para testes de interface. 
 
 1. master: possui o projeto mais simples possível, para quem é iniciante com selenium, java e junit 5. 
 2. selenium-puro: exemplifica o uso de selenium e java puro (sem Junit 5). 
